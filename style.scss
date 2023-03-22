@@ -1,0 +1,25 @@
+body {
+    background-color: aquamarine;
+}
+.list-item{
+    border-bottom: dashed;
+    display: flex;
+    border-width: 0.5px;
+}
+.list-item:hover{
+    background-color: green;
+}
+.list-item::before{
+ content: "*";
+ padding-right: 10px;
+ 
+}
+
+#results{
+    background-color: white;
+    list-style: none;
+    margin-left: 0;
+    padding-left: 1em;
+    line-height: 36px;
+
+ }
