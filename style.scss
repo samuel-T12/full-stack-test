@@ -1,25 +1,23 @@
 body {
-    background-color: aquamarine;
+  background-color: aquamarine;
 }
-.list-item{
-    border-bottom: dashed;
-    display: flex;
-    border-width: 0.5px;
+.list-item {
+  border-bottom: dashed;
+  display: flex;
+  border-width: 0.5px;
 }
-.list-item:hover{
-    background-color: green;
+.list-item::before {
+  content: "*";
+  padding-right: 10px;
 }
-.list-item::before{
- content: "*";
- padding-right: 10px;
- 
+.list-item:hover {
+  background-color: green;
 }
 
-#results{
-    background-color: white;
-    list-style: none;
-    margin-left: 0;
-    padding-left: 1em;
-    line-height: 36px;
-
- }
+#results {
+  background-color: white;
+  list-style: none;
+  margin-left: 0;
+  padding-left: 1em;
+  line-height: 36px;
+}
